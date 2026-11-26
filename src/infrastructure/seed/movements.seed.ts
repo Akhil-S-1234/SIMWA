@@ -1,0 +1,40 @@
+import type { StockMovement } from "@/shared/types/domain";
+
+export const INITIAL_MOVEMENTS: StockMovement[] = [
+  {
+    id: "mov-1",
+    productId: "prod-1",
+    productName: 'Dell UltraSharp 27" 4K Monitor',
+    type: "purchase",
+    quantityChange: 45,
+    previousQuantity: 0,
+    newQuantity: 45,
+    referenceId: "PO-4091",
+    reason: "Dock B Inbound receipt",
+    createdAt: "2024-10-24T14:15:00Z",
+  },
+  {
+    id: "mov-2",
+    productId: "prod-3",
+    productName: "Schneider Acti9 32A Double Pole MCB",
+    type: "sale",
+    quantityChange: -12,
+    previousQuantity: 12,
+    newQuantity: 0,
+    referenceId: "SO-8924",
+    reason: "Order fulfillment",
+    createdAt: "2024-10-24T11:30:00Z",
+  },
+  {
+    id: "mov-3",
+    productId: "prod-2",
+    productName: "Polycab 2.5sq mm Copper Wire",
+    type: "adjustment",
+    quantityChange: -2,
+    previousQuantity: 16,
+    newQuantity: 14,
+    referenceId: "ADJ-1082",
+    reason: "Bay 04 Audit Discrepancy (Breakage)",
+    createdAt: "2024-10-24T09:45:00Z",
+  },
+];
